@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personality Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="questionContainer" class="question-container">
+            <div id="progress" class="progress-bar"></div>
+            <div id="questionPage"></div>
+            <div class="navigation-buttons">
+                <button id="prevBtn" onclick="previousPage()" class="nav-btn">Back</button>
+                <button id="nextBtn" onclick="nextPage()" class="nav-btn">Next</button>
+            </div>
+        </div>
+
+        <div id="accessCodeContainer" class="hidden">
+            <h2>Enter Access Code to View Results</h2>
+            <input type="text" id="accessCode" placeholder="Enter access code">
+            <button onclick="checkAccessCode()" class="nav-btn">Submit</button>
+        </div>
+
+        <div id="resultsContainer" class="hidden">
+            <h2>Your Personality Profile</h2>
+            <div id="dominantType"></div>
+            <div id="scores"></div>
+        </div>
+    </div>
+    <script src="questions.js"></script>
+    <script src="app.js"></script>
+</body>
+</html> 
